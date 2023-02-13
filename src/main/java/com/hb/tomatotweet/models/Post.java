@@ -1,6 +1,5 @@
 package com.hb.tomatotweet.models;
 
-import java.util.Date;
 
 public class Post {
 	

@@ -1,5 +1,5 @@
 package com.hb.tomatotweet.dtos;
 
-public record PostDTO(String id, String title, String content) {
+public record PostDTO(String id, Integer category, String content) {
 
 }

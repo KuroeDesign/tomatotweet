@@ -1,7 +1,7 @@
 package com.hb.tomatotweet.controllers;
 
-import com.hb.blog.dtos.PostDTO;
-import com.hb.blog.services.PostService;
+import com.hb.tomatotweet.dtos.PostDTO;
+import com.hb.tomatotweet.services.PostService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -34,7 +34,7 @@ public class PostController {
 	public ModelAndView addPost() {
 		ModelAndView mav = new ModelAndView("addpost");
 		
-		mav.addObject("post", new PostDTO("", "", ""));
+		mav.addObject("post", new PostDTO("", 0, ""));
 		return mav;
 	}
 	

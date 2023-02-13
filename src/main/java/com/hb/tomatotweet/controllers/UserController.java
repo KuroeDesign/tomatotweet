@@ -1,8 +1,8 @@
 package com.hb.tomatotweet.controllers;
 
-import com.hb.blog.dtos.UserDTO;
-import com.hb.blog.dtos.UserFormDTO;
-import com.hb.blog.services.UserService;
+import com.hb.tomatotweet.dtos.UserDTO;
+import com.hb.tomatotweet.dtos.UserFormDTO;
+import com.hb.tomatotweet.services.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;

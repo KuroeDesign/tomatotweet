@@ -1,7 +1,7 @@
 package com.hb.tomatotweet.services;
 
-import com.hb.blog.models.LocalUser;
-import com.hb.blog.repositories.UserRepository;
+import com.hb.tomatotweet.models.LocalUser;
+import com.hb.tomatotweet.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
