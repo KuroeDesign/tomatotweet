@@ -28,7 +28,7 @@ public class UserService {
 		List<UserDTO> userDtos = new ArrayList<>();
 		
 		users.forEach((user) -> {
-			userDtos.add(new UserDTO(user.getId(), user.getUsername(), user.getRole()));
+			userDtos.add(new UserDTO(user.getId(), user.getUsername(), user.getRole(), user.getCategories()));
 		});
 
 		return userDtos;
