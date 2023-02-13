@@ -1,16 +1,19 @@
 [ {
-    "id" : 1,
-    "username" : "user",
-    "password" : "$2a$12$a5uMRm0MNoSWZmZ3c1ZsYeDppRyTxorA54Ubmp3ShZTOwaUKIvOku",
-    "role" : "USER"
-  }, {
-    "id" : 2,
-    "username" : "admin",
-    "password" : "$2a$12$5Imjk1at5PVBS3CyKSXBKOJu2pdlbGQxFJB79UBA6CwrAPRpw6f4K",
-    "role" : "ADMIN"
-  }, {
-    "id" : 3,
-    "username" : "tomato",
-    "password" : "$2y$10$RYZA/5rI3vdH9a7X.bsSROem.5141oNu3wxyrEEuH4UhFP.PrfWcC",
-    "role" : "ADMIN"
-  }]
+  "id" : 1,
+  "username" : "user",
+  "password" : "$2a$12$a5uMRm0MNoSWZmZ3c1ZsYeDppRyTxorA54Ubmp3ShZTOwaUKIvOku",
+  "categories" : null,
+  "role" : "USER"
+}, {
+  "id" : 2,
+  "username" : "admin",
+  "password" : "$2a$12$5Imjk1at5PVBS3CyKSXBKOJu2pdlbGQxFJB79UBA6CwrAPRpw6f4K",
+  "categories" : null,
+  "role" : "ADMIN"
+}, {
+  "id" : 3,
+  "username" : "tomato",
+  "password" : "$2y$10$RYZA/5rI3vdH9a7X.bsSROem.5141oNu3wxyrEEuH4UhFP.PrfWcC",
+  "categories" : null,
+  "role" : "ADMIN"
+} ]

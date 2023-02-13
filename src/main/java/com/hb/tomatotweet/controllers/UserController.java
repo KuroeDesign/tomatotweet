@@ -23,7 +23,7 @@ public class UserController {
 	@GetMapping("private/user")
 	public ModelAndView adminPage() {		
 		List<UserDTO> users = userService.getUsers();
-		ModelAndView mav = new ModelAndView("admin");
+		ModelAndView mav = new ModelAndView("home-user");
 		mav.addObject("users", users);		
 		return mav;
 	}
@@ -31,7 +31,7 @@ public class UserController {
 	@GetMapping("public/user/new")
 	public ModelAndView getRegistrationForm() {		
 		ModelAndView mav = new ModelAndView("register");
-		mav.addObject("user", new UserFormDTO("", ""));
+		mav.addObject("user", new UserFormDTO("", "" ));
 		return mav;
 	}
 	

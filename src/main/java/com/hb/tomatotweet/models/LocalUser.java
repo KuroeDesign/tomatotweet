@@ -6,12 +6,12 @@ public class LocalUser {
 	private String username;
 	private String password;
 
-	private int[] categories;
+	private Integer[] categories;
 	private String role;
 
 	public LocalUser() {}
 
-	public LocalUser(Integer id, String username, String password, int[] categories, String role) {
+	public LocalUser(Integer id, String username, String password, Integer[] categories, String role) {
 		this.id = id;
 		this.username = username;
 		this.password = password;
@@ -43,11 +43,11 @@ public class LocalUser {
 		this.password = password;
 	}
 
-	public int[] getCategories() {
+	public Integer[] getCategories() {
 		return categories;
 	}
 
-	public void setCategories(int[] categories) {
+	public void setCategories(Integer[] categories) {
 		this.categories = categories;
 	}
 
