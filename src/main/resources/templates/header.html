@@ -1,0 +1,7 @@
+<nav th:fragment="header">
+	<a href="#" th:href="@{/}">Accueil</a>
+	<a href="#" sec:authorize="isAnonymous()" th:href="@{/login}">Connexion</a>
+	<a href="#" sec:authorize="isAuthenticated()" th:href="@{/logout}">Deconnexion</a>
+	<a href="#" sec:authorize="isAnonymous()" th:href="@{/public/user/new}">Inscription</a>
+	
+</nav>
