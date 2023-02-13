@@ -2,7 +2,7 @@ package com.hb.tomatotweet.repositories;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.hb.blog.models.Post;
+import com.hb.tomatotweet.models.Post;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Repository;
 

@@ -1,9 +1,9 @@
 package com.hb.tomatotweet.services;
 
-import com.hb.blog.dtos.UserDTO;
-import com.hb.blog.dtos.UserFormDTO;
-import com.hb.blog.models.LocalUser;
-import com.hb.blog.repositories.UserRepository;
+import com.hb.tomatotweet.dtos.UserDTO;
+import com.hb.tomatotweet.dtos.UserFormDTO;
+import com.hb.tomatotweet.models.LocalUser;
+import com.hb.tomatotweet.repositories.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 

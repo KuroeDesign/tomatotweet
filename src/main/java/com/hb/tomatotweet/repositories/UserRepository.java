@@ -2,7 +2,7 @@ package com.hb.tomatotweet.repositories;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.hb.blog.models.LocalUser;
+import com.hb.tomatotweet.models.LocalUser;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
