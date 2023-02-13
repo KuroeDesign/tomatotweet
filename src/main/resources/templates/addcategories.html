@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form select categories</title>
+</head>
+<body>
+	<h1>Selectionner ses catégories</h1>
+
+	<form th:action="@{private/user/addcategories}" th:object="${post}"
+		method="post">
+		<div th:each="category: ${categories}">
+			<labe th:for="${category.id}"><span th:text="${category.label}"/></label>
+			<input type="checkbox" th:id="${category.id}" th:field="*{category.id}" value="${category.id}" />
+		</div>
+		<input type="text" th:field="*{content}" /> <br /> 
+		<input type="submit" value="Add" />
+	</form>
+
+</body>
+</html>

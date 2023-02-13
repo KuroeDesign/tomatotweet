@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Home Tomato APP</title>
-  </head>
-  <body>
-  	<header th:insert="header :: header"></header>
-    <h1>BEST OF TOMATO TWEET</h1>
-  </body>
+<head>
+<meta charset="UTF-8" />
+<title>Home Tomato APP</title>
+</head>
+<body>
+	<header th:insert="header :: header"></header>
+	<h1>BEST OF TOMATO TWEET</h1>
+
+	<p sec:authorize="isAnonymous()">Veuillez vous connecter pour visualiser vos actus</p>
+
+	<div id="filactu" sec:authorize="isAuthenticated()">
+
+		<h1>Liste des articles</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Catégorie</th>
+					<th>Contenu</th>
+				<tr>
+			</thead>
+			<tbody>
+				<tr th:each="post: ${posts}">
+					<td><span th:text="${post.category}" /></td>
+					<td><span th:text="${post.content}" /></td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+
+</body>
 </html>

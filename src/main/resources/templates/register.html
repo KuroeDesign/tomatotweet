@@ -5,12 +5,13 @@
 <title>Formulaire d'inscription</title>
 </head>
 <body>
+	<header th:insert="header :: header"></header>
 	<h1>Inscription</h1>
 
 	<form th:action="@{/public/user/new}" th:object="${user}" method="post">
-		<input type="text" th:field="*{username}" /> <br /> 
-		<input type="password" th:field="*{password}" /> <br />
-		<input type="submit" value="Register" />
+		<input type="text" th:field="*{username}" /> <br /> <input
+			type="password" th:field="*{password}" /> <br /> <input
+			type="submit" value="Register" />
 	</form>
 
 </body>
