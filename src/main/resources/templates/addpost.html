@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add post form</title>
+</head>
+<body>
+	<h1>New post</h1>
+
+	<form th:action="@{/private/post/add}" th:object="${post}"
+		method="post">
+		<select th:field="*{category}">
+			<option th:value="1" th:text="Java"></option>
+			<option th:value="2" th:text="PHP"></option>
+			<option th:value="3" th:text="Angular"></option>
+			<option th:value="4" th:text="ReactJS"></option>
+			<option th:value="5" th:text="VueJS"></option>
+			<option th:value="6" th:text="Symfony"></option>
+			<option th:value="7" th:text="Spring"></option>
+			<option th:value="8" th:text="SQL"></option>
+			<option th:value="9" th:text="NOSQL"></option>
+		</select> <br /> 
+		<input type="text" th:field="*{content}" /> <br /> 
+		<input type="submit" value="Add" />
+	</form>
+
+</body>
+</html>

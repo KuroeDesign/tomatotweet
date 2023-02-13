@@ -43,7 +43,7 @@ public class PostController {
 		
 		postService.addPost(post);
 		List<PostDTO> posts = postService.getPosts();
-		ModelAndView mav = new ModelAndView("posts");
+		ModelAndView mav = new ModelAndView("home");
 		mav.addObject("posts", posts);
 		return mav;
 	}
