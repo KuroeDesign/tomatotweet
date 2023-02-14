@@ -12,7 +12,8 @@
 
 	<div id="filactu" sec:authorize="isAuthenticated()">
 
-		<h1>Liste des articles</h1>
+		<h2>Liste des articles</h2>
+		<a href="#" th:href="@{/private/post/add}">Ajouter un article</a>
 		<table>
 			<thead>
 				<tr>

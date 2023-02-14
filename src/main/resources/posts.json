@@ -38,4 +38,8 @@
   "id" : 10,
   "category" : 1,
   "content" : "ceci est un test"
+}, {
+  "id" : 11,
+  "category" : null,
+  "content" : "ceci est un test2"
 } ]

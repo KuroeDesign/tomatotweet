@@ -6,11 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.stereotype.Repository;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.hb.tomatotweet.models.Categorie;
 
+@Repository
 public class CategoryRepository {
 	
 	public List<Categorie> getCategories() {

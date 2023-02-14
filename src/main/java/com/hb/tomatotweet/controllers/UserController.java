@@ -18,7 +18,6 @@ import java.util.List;
 public class UserController {
 
 	private UserService userService;
-	private CategoryService categoryService;
 	
 	public UserController(UserService userService) {
 		this.userService = userService;
@@ -50,7 +49,7 @@ public class UserController {
 	public ModelAndView getAddCategoriesForm( CategoryService categoryService) {
 		List<CategoryDTO> categories = categoryService.getCategories();
 		ModelAndView mav = new ModelAndView("addcategories");
-		mav.addObject("categorie", categories);
+		mav.addObject("categories", categories);
 		return mav;
 	}
 	

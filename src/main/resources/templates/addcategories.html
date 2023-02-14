@@ -5,6 +5,7 @@
 <title>Form select categories</title>
 </head>
 <body>
+<header th:insert="header :: header"></header>
 	<h1>Selectionner ses catégories</h1>
 
 	<form th:action="@{private/user/addcategories}" th:object="${post}"
@@ -13,7 +14,6 @@
 			<labe th:for="${category.id}"><span th:text="${category.label}"/></label>
 			<input type="checkbox" th:id="${category.id}" th:field="*{category.id}" value="${category.id}" />
 		</div>
-		<input type="text" th:field="*{content}" /> <br /> 
 		<input type="submit" value="Add" />
 	</form>
 

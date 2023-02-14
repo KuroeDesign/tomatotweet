@@ -5,6 +5,7 @@
 <title>Add post form</title>
 </head>
 <body>
+<header th:insert="header :: header"></header>
 	<h1>New post</h1>
 
 	<form th:action="@{/private/post/add}" th:object="${post}"
